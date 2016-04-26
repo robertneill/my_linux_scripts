@@ -65,7 +65,10 @@ zip -9vm filename.zip files*.txt
 find . -name file_to_search_for -print
 
 
-
-
-
+#get the ipaddresses and mac addresses connected to your local network
+arp -a
+ping -b 192.168.0.255
+#if that doesn't work then install arp-scan
+sudo agp-get install arp-scan
+sudo arp-scan --interface=wlan0 --localnet
 
